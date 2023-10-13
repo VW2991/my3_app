@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "my3-app"
+client_id = "6c4ad9bfd5e71119e4ec868aafa2ce72"
+application_url = "https://adapted-various-de-nation.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://adapted-various-de-nation.trycloudflare.com/auth/callback",
+  "https://adapted-various-de-nation.trycloudflare.com/auth/shopify/callback",
+  "https://adapted-various-de-nation.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "idummyapp.myshopify.com"
